@@ -1,0 +1,74 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<title>"My first Page"</title>
+	<meta name ="viewport" content = "width=device-width", initial-scale = 1.0>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a href "Firstpage.html" class="header-logo">ProTool</a>
+		<nav>
+			<ul>
+				<li><a href "Firstpage.html">Home</a></li>
+				<li><a href "contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<button onclick="document.getElementById('modal-wrapper2').style.display='block'" class="header-signup">SIGNUP</button>
+					
+	</header>
+	<main>
+		<section class="main-design">
+		    <h1> Welcome to ProTool</h1>
+		    <h2> sail through your requisitions <br> fast and efficiently </h2>
+		    <button onclick="document.getElementById('modal-wrapper').style.display='block'">Login Admin</button>
+		    <button onclick="document.getElementById('modal-wrapper').style.display='block'">Login User</button>
+
+            <div id="modal-wrapper" class="modal">
+  
+                <form class="modal-content animate" action="####">
+                	<div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                        <img src="1.png" alt="icon" class="icon">
+                        <h1 style="text-align:center">ProTool Sign-In Page</h1>
+                    </div>
+
+                    <div class="container">
+                        <input type="text" placeholder="Enter Username" name="uname">
+                        <input type="password" placeholder="Enter Password" name="psw">       
+                        <button type="submit" style ="width:20%">Login</button>
+                        <input type="checkbox" style="margin:26px 30px;"> Remember me      
+                        <a href="#" style="text-decoration:none; float:right; margin-right:0px; margin-top:20px;">Forgot Password</a>
+                    </div>
+                </form>
+    
+            </div>
+            <div id="modal-wrapper2" class="modal">
+  
+                <form class="modal-content animate" action="###">
+
+                	<div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                        <img src="1.png" alt="icon" class="icon">
+                        <h1 style="text-align:center">ProTool Sign-Up Page</h1>
+                    </div>
+
+                    <div class="container">
+                        <input type="text" placeholder="Enter Username" name="uname">
+                        <input type="password" placeholder="Enter Password" name="psw">        
+                        <button type="submit" style="width:20%">submit</button>
+                        <input type="checkbox" style="margin:26px 30px;"> Remember me      
+                        <a href="#" style="text-decoration:none; float:right; margin-right:0px; margin-top:20px;">Forgot Password</a>
+                    </div>
+                </form>
+    
+            </div>
+		</section>
+
+	</main>
+
+</body>
+</html>
+
